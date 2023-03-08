@@ -23,11 +23,12 @@ export const styles ={
     },
     wrapmenu:{
         gap:{
-            xs:3,
+            xs:2,
             md:10,lg:20,
         },
         alignItems:'center',
-        display:'flex'
+        display:'flex',
+        marginRight:2
     },
 
 }
