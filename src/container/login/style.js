@@ -14,7 +14,17 @@ export const styles = {
     },
     title:{
         fontWeight:'bold',
-        color:colors.main,
-        fontSize:{xs:'30px',lg:'50px'},
+        color:colors.texs,
+        fontSize:{xs:'30px',lg:'40px'},
+    },
+    button:{
+      width:'100%',
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center',
+      mt:3,
+      p:1,
+      color:colors.main,
+      fontWeight:'bold'
     }
   };

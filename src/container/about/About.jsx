@@ -10,7 +10,7 @@ function About() {
       <ILMetrics width={"100%"} height={"100%"}/>
     </Box>
     <Box sx={styles.wrapabout}>
-      <Typography variant='h3' sx={styles.title}>
+      <Typography  sx={styles.title}>
         Boost your business with smart inventory management.
       </Typography>
       <Typography variant="subtitle1" sx={styles.desc}>

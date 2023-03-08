@@ -1,8 +1,9 @@
 import './App.css';
-import { Typography} from '@mui/material';
 import React from 'react';
 import Header from './container/header/Header';
 import About from './container/about/About';
+import Price from './container/price/Price';
+import Footer from './container/footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -12,8 +13,11 @@ function App() {
       <div id='about'>
         <About/>
       </div>
-      <div className="aaa">
-        <Typography>CONTACT</Typography>
+      <div id='price'>
+       <Price/>
+      </div>
+      <div id='footer'>
+       <Footer/>
       </div>
     </div>
   );

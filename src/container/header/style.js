@@ -1,4 +1,5 @@
 import { colors } from "../../theme/colors";
+import { font } from "../../theme/font";
 
 export const styles ={
     wrap: {
@@ -13,7 +14,7 @@ export const styles ={
     typlg:{
         color:colors.texs,
         fontWeight:'bold',
-        fontFamily: colors.fontmain,
+        fontFamily: font.main,
     },
     button:{
         paddingX: 5, 

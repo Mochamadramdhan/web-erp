@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, TextField, Box, Typography } from "@mui/material";
+import { Modal, TextField, Box, Typography,Button } from "@mui/material";
 import { styles } from "./style";
 
 
@@ -26,6 +26,7 @@ const Login = (props) => {
               margin="normal"
               required
             />
+            <Button variant="outlined" sx={styles.button} onClick={handleClose}>LOGIN</Button>
           </form>
         </Box>
       </Modal>

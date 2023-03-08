@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { colors } from '../../theme/colors';
 import { styles } from './style';
 import Login from '../login/Login';
+import { font } from '../../theme/font';
 
 const menuItems = [
   { id: 1, label: 'About' },
@@ -48,7 +49,7 @@ function Header() {
       boxShadow: scrolled ? '0 2px 2px 1px rgba(1,1,1,0.09)' : 'none',}}
     >
         <Toolbar style={styles.toolbar}>
-          <Typography style={styles.typlg} variant='h4'>Jae'</Typography>
+          <Typography style={styles.typlg} variant='h5'>Jae'</Typography>
           <Box sx={styles.wrapmenu}>
           {menuItems.map((item) => (
             <Typography key={item.id}>
@@ -58,7 +59,7 @@ function Header() {
                 style={{
                   color: hoveredItem === item.label ? colors.main : colors.texs,
                   cursor: 'pointer',
-                  fontFamily: colors.fontmain,
+                  fontFamily: font.main,
                   fontSize: {
                     xs: "24px",
                     md: "30px",

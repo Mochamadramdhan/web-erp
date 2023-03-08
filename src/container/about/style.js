@@ -1,11 +1,16 @@
 import { colors } from "../../theme/colors"
+import { font } from "../../theme/font"
 export const styles ={
     wrap: {
-        height: "100vh",
+        height: {
+          xs: "100%",
+          md: "100vh",
+          lg:'100vh'
+        },
         pt: {
           xs: "90px",
           md: "95px",
-          lg:'50px'
+          lg:'80px'
         },
         display: "flex",
         flexDirection: {xs:'column',lg:'row'},
@@ -25,15 +30,15 @@ export const styles ={
 		wrapabout:{
 			justifyContent: "center",
 			width:{xs:'100%',lg:'45%'},
-			textAlign: {xs:'center',lg:'left'}
+			textAlign: {xs:'center',lg:'left'},
 		},
 		title:{
 			color: colors.texs,
 			fontWeight: "600",
-			fontFamily: colors.fontmain,
+			fontFamily: font.main,
 		fontSize: {
       xs: "26px",
-      md: "40px",
+      md: "300px",
       lg:'50px'
     },
 		},
@@ -43,6 +48,7 @@ export const styles ={
         md: "24px",
         lg:'28px'
       },
+      pt:3
 		}
 
 }
