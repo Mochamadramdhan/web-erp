@@ -17,7 +17,7 @@ export const styles ={
         fontFamily: font.main,
     },
     button:{
-        paddingX: 5, 
+        paddingX: {xs:0,md:5}, 
         fontWeight: 'bold', 
         color: colors.main, 
         orderColor: colors.main,  
