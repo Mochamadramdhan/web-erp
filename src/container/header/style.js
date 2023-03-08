@@ -8,7 +8,6 @@ export const styles ={
         position:'fixed'
       },
     toolbar:{
-        gap: '5%', 
         justifyContent: 'space-between',
     },
     typlg:{
@@ -24,7 +23,7 @@ export const styles ={
     },
     wrapmenu:{
         gap:{
-            xs:5,md:10,lg:20,
+            xs:2,md:10,lg:20,
         },
         alignItems:'center',
         display:'flex'
