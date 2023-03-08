@@ -3,7 +3,6 @@ import { Typography} from '@mui/material';
 import React from 'react';
 import Header from './container/header/Header';
 import About from './container/about/About';
-
 function App() {
   return (
     <div className="App">

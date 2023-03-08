@@ -2,6 +2,7 @@ import { Typography, Button, AppBar, Toolbar,Box} from '@mui/material';
 import React, { useState, useEffect } from 'react';
 import { colors } from '../../theme/colors';
 import { styles } from './style';
+import Login from '../login/Login';
 
 const menuItems = [
   { id: 1, label: 'About' },
@@ -9,6 +10,7 @@ const menuItems = [
   { id: 3, label: 'Contact' },
 ];
 function Header() {
+
   const [scrolled, setScrolled] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
   const handleMouseEnter = (itemName) => {
@@ -16,6 +18,13 @@ function Header() {
   };
   const handleMouseLeave = () => {
     setHoveredItem(null);
+  };
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
   };
 
   useEffect(() => {
@@ -39,7 +48,7 @@ function Header() {
       boxShadow: scrolled ? '0 2px 2px 1px rgba(1,1,1,0.09)' : 'none',}}
     >
         <Toolbar style={styles.toolbar}>
-          <Typography style={styles.typlg} variant='h5'>Jae'</Typography>
+          <Typography style={styles.typlg} variant='h4'>Jae'</Typography>
           <Box sx={styles.wrapmenu}>
           {menuItems.map((item) => (
             <Typography key={item.id}>
@@ -61,9 +70,10 @@ function Header() {
               </span>
             </Typography>
           ))}
-          <Button variant='outlined' sx={styles.button}>
-            Login
-          </Button>
+            <Button variant='outlined' sx={styles.button} onClick={handleOpen}>
+              Login
+            </Button>
+            <Login open={open} handleClose={handleClose}/>
           </Box>
         </Toolbar>
       </AppBar>

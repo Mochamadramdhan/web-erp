@@ -23,7 +23,8 @@ export const styles ={
     },
     wrapmenu:{
         gap:{
-            xs:2,md:10,lg:20,
+            xs:3,
+            md:10,lg:20,
         },
         alignItems:'center',
         display:'flex'
