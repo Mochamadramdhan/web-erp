@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './container/header/Header';
 import About from './container/about/About';
 import Price from './container/price/Price';
+import Contact from './container/footer/Contact';
 import Footer from './container/footer/Footer';
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
        <Price/>
       </div>
       <div id='footer'>
+       <Contact/>
        <Footer/>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { Typography, Button, AppBar, Toolbar,Box} from '@mui/material';
+import { Typography, Button, AppBar, Toolbar,Box,Link} from '@mui/material';
 import React, { useState, useEffect } from 'react';
 import { colors } from '../../theme/colors';
 import { styles } from './style';
@@ -49,7 +49,9 @@ function Header() {
       boxShadow: scrolled ? '0 2px 2px 1px rgba(1,1,1,0.09)' : 'none',}}
     >
         <Toolbar style={styles.toolbar}>
-          <Typography style={styles.typlg} variant='h5'>Jae'</Typography>
+          <Link href="#" underline="none">
+            <Typography style={styles.typlg} variant='h5'>Jae'</Typography>
+          </Link>
           <Box sx={styles.wrapmenu}>
           {menuItems.map((item) => (
             <Typography key={item.id}>

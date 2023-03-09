@@ -9,7 +9,13 @@ export const styles ={
     head:{
         fontWeight:'bold',
         fontFamily:font.main,
-        mb:15
+        fontSize: {
+            xs: "30px",
+            md: "40px",
+            lg:'50px'
+          },
+        mb:10,
+        mt:5
     },
     global:{
         ul: { margin: 0, padding: 0, listStyle: 'none' }

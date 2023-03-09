@@ -4,13 +4,13 @@ export const styles ={
     wrap: {
         height: {
           xs: "100%",
-          md: "100vh",
+          md: "100%",
           lg:'100vh'
         },
         pt: {
           xs: "90px",
-          md: "95px",
-          lg:'80px'
+          md: "90px",
+          lg:'30px'
         },
         display: "flex",
         flexDirection: {xs:'column',lg:'row'},
@@ -36,11 +36,11 @@ export const styles ={
 			color: colors.texs,
 			fontWeight: "600",
 			fontFamily: font.main,
-		fontSize: {
-      xs: "26px",
-      md: "300px",
-      lg:'50px'
-    },
+      fontSize: {
+        xs: "30px",
+        md: "40px",
+        lg:'50px'
+      },
 		},
 		desc:{
 			fontSize: {
