@@ -3,7 +3,6 @@ import { font } from "../../theme/font";
 
 export const styles ={
     wrap:{
-        pt:20,
         pb:12
     },
     txthead:{

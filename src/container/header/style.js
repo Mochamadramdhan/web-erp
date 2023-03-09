@@ -2,6 +2,7 @@ import { colors } from "../../theme/colors";
 import { font } from "../../theme/font";
 
 export const styles ={
+
     wrap: {
         backgroundColor: colors.backroud1,
         transition: 'height 0.3s ease',
@@ -31,5 +32,12 @@ export const styles ={
         display:'flex',
         marginRight:2
     },
+    link: {
+        color: colors.texs,
+        textDecoration: 'none',
+        '&:active, &:visited': {
+          color: 'red',
+        }
+    }
 
 }

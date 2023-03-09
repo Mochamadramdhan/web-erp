@@ -17,7 +17,7 @@ function App() {
       <div id='price'>
        <Price/>
       </div>
-      <div id='footer'>
+      <div id='contact'>
        <Contact/>
        <Footer/>
       </div>

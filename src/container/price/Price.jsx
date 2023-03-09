@@ -13,45 +13,52 @@ import Container from '@mui/material/Container';
 import { styles } from './style'
 
 
-const tiers = [    {      title: 'Basic',      price: '10',      description: [        'Record incoming inventory',        ' Record outgoing inventory',        'Record profits earned',      ],
-      buttonText: 'Get started',
-      buttonVariant: 'contained',
-    },
-    {
-      title: 'Entrepreneur',
-      price: '20',
-      description: [
-        'Record incoming inventory',
-        ' Record outgoing inventory',
-        'Record profits earned',
-        'Analyze sales performance with charts',
-        '24/7 support',
-  
-      ],
-      buttonText: 'Get started',
-      buttonVariant: 'contained',
-    },
-    {
-      title: 'Entrepreneur',
-      price: '30',
-      description: [
-        'Record incoming inventory',
-        ' Record outgoing inventory',
-        'Record profits earned',
-        'Analyze sales performance with charts',
-        '24/7 support',
-        'Export data to Excel',
-        'AI prediction of earnings'
-      ],
-      buttonText: 'Get started',
-      buttonVariant: 'contained',
-    },
-  ];
+const tiers = [
+  {
+    title: 'Basic',
+    price: '10',
+    description: [
+      'Record incoming inventory',
+      'Record outgoing inventory',
+      'Record profits earned',
+    ],
+    buttonText: 'Get started',
+    buttonVariant: 'contained',
+  },
+  {
+    title: 'Entrepreneur',
+    price: '20',
+    description: [
+      'Record incoming inventory',
+      'Record outgoing inventory',
+      'Record profits earned',
+      'Analyze sales performance with charts',
+      '24/7 support',
+    ],
+    buttonText: 'Get started',
+    buttonVariant: 'contained',
+  },
+  {
+    title: 'Business',
+    price: '30',
+    description: [
+      'Record incoming inventory',
+      'Record outgoing inventory',
+      'Record profits earned',
+      'Analyze sales performance with charts',
+      '24/7 support',
+      'Export data to Excel',
+      'AI prediction of earnings',
+    ],
+    buttonText: 'Get started',
+    buttonVariant: 'contained',
+  },
+];
 
 
 function PricingContent() {
   return (
-    <Box>
+    <Box sx={styles.wrap} marginBottom>
 			<Typography variant='h3' sx={styles.head}>Price</Typography>
       <GlobalStyles styles={styles.global} />
       <CssBaseline />
